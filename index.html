@@ -1,589 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.1/sdk.min.js">
-    </script>
-    <script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.1/sdk.js">
-    </script>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="" name="description">
-    <meta content="Kedar Abhyankar, Srividya Gandikota, and Joshua Pang" name="author">
-    <title>CatastroSee</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-	
+<script>
+var latestInfoBox;
+</script>
+	<script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.1/sdk.min.js">
+	</script>
+	<script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.1/sdk.js">
+	</script>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="" name="description">
+	<meta content="Kedar Abhyankar, Srividya Gandikota, and Joshua Pang" name="author">
+	<title>CatastroSee</title><!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Custom fonts for this template -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"><!-- Custom styles for this template -->
+	<link href="css/freelancer.min.css" rel="stylesheet">
 </head>
-
 <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Catastrosee</a>
-            <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">Menu <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#software">Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Header -->
-    <header class="masthead">
-        <div class="container">
-            <img alt="" class="img-fluid" src="img/without.png">
-            <div class="intro-text">
-                <span class="name">Catastrosee</span>
-                <hr class="star-light">
-                <span class="skills">Track disasters and emergencies across the span of the United States, including Earthquakes, Fires, and Tsunamis.</span>
-            </div>
-        </div>
-    </header>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2 class="text-center">Information</h2>
-            <hr class="star-primary">
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img alt="" class="img-fluid" src="img/portfolio/cabin.png">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img alt="" class="img-fluid" src="img/portfolio/cake.png">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img alt="" class="img-fluid" src="img/portfolio/circus.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <h2 class="text-center">About</h2>
-            <hr class="star-light">
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p>Catastrosee shows nearby disasters or emergency sites, and allows you to find relief centers during these times. In addition, you can donate to those who have already sufferred tragedy from disaster.</p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p>Satori is a open data service that provides live data instantaneously, with almost zero latency.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Software Section -->
-    <section class="success" id="software">
-        <div class="container">
-            <h2 class="text-center">Software</h2>
-            <hr class="star-light">
-        </div>
-        <div id="map"></div>
-        <script>
-            var map;
-
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: 51.4778,
-                        lng: 0.0015
-                    },
-                    zoom: 8
-                });
-                infoWindow = new google.maps.InfoWindow;
-
-                // Try HTML5 geolocation.
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function(position) {
-                        var pos = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude
-                        };
-
-                        map.setCenter(pos);
-                    }, function() {
-                        handleLocationError(true, infoWindow, map.getCenter());
-                    });
-                } else {
-                    // Browser doesn't support Geolocation
-                    handleLocationError(false, infoWindow, map.getCenter());
-                }
-            }
-
-            function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-				infoWindow.setPosition(pos);
-                infoWindow.setContent(browserHasGeolocation ?
-                    'Error: The Geolocation service failed.' :
-                    'Error: Your browser doesn\'t support geolocation.');
-                infoWindow.open(map);
-            }
-			
-			function initialize() {
-				var pyrmont = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
-
-				var request = {
-					location: pyrmont,
-					radius: '500000',
-					query: 'hospital'
-				};
-
-			service = new google.maps.places.PlacesService(map);
-			service.textSearch(request, callback);
-			}
-			function callback(results, status) {
-				if (status == google.maps.places.PlacesServiceStatus.OK) {
-					for (var i = 0; i < results.length; i++) {
-						var place = results[i];
-						createMarker(results[i]);
-					}
-				}
-			}
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnri8JdPTb5Lm-7mviu4add4803akUaZg&callback=initMap">
-        </script>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <hr class="star-primary">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form id="contactForm" name="sentMessage" novalidate="">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Name</label>
-                                <input class="form-control" data-validation-required-message="Please enter your name." id="name" placeholder="Name" required="" type="text">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input class="form-control" data-validation-required-message="Please enter your email address." id="email" placeholder="Email Address" required="" type="email">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea class="form-control" data-validation-required-message="Please enter a message." id="message" placeholder="Message" required="" rows="5"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="form-group">
-                            <button class="btn btn-success btn-lg" id="sendMessageButton" type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Santa Clara
-                            <br> Silicon Valley, CA</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About CatastroSee</h3>
-                        <p>A simple disaster monitor that allows you to find and take shelter at relief centers during times of disaster.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; CatastroSee 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top d-lg-none">
-        <a class="btn btn-primary js-scroll-trigger" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-    </div>
-    <!-- Portfolio Modals -->
-    <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal1" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img alt="" class="img-fluid img-centered" src="img/portfolio/cabin.png">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                    </li>
-                                    <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                    </li>
-                                    <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal2" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img alt="" class="img-fluid img-centered" src="img/portfolio/cake.png">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                    </li>
-                                    <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                    </li>
-                                    <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal3" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img alt="" class="img-fluid img-centered" src="img/portfolio/circus.png">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                    </li>
-                                    <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                    </li>
-                                    <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal4" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img alt="" class="img-fluid img-centered" src="img/portfolio/game.png">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                    </li>
-                                    <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                    </li>
-                                    <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal5" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img alt="" class="img-fluid img-centered" src="img/portfolio/safe.png">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                    </li>
-                                    <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                    </li>
-                                    <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal6" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img alt="" class="img-fluid img-centered" src="img/portfolio/submarine.png">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                    </li>
-                                    <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                    </li>
-                                    <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Satori RTM Client-->
-    <script>
-        var rtm = new RTM("wss://open-data.api.satori.com", "dEb96F48C561eB293E277ffE278232B4");
-        var channel = rtm.subscribe('USGS-Earthquakes', RTM.SubscriptionMode.SIMPLE, {
-            filter: 'SELECT geometry.coordinates[1] AS "Latitude" , geometry.coordinates[0] AS "Longitude" , properties.title AS "Details"  FROM `USGS-Earthquakes`'
-        });
-        console.log("hello");
-        channel.on('rtm/subscription/data', function(pdu) {
-            pdu.body.messages.forEach(function(msg) {
-                console.log("test", msg);
-				var yellow='http://maps.google.com/mapfiles/ms/micons/yellow-dot.png';
-                var marker = new google.maps.Marker({
-                    position: {
-                        lat: msg.Latitude,
-                        lng: msg.Longitude
-                    },
-                    map: map,
-                    title: msg.Details,
-					icon:yellow
-                });
-                var infowindow = new google.maps.InfoWindow({
-                    content:msg.Details
-                });
-                marker.addListener('click', function() {
-					infowindow.close();
-                    infowindow.open(map, marker);
-                });
-            });
-        });
-        rtm.start();
-    </script>
-	<script>
-        var rtm2 = new RTM("wss://open-data.api.satori.com", "Eb486E2e4BCc91FF54D4A5fAfd45Ba8D");
-        var channel = rtm2.subscribe('active-fire-alerts', RTM.SubscriptionMode.SIMPLE, {
-            filter: 'SELECT latitude AS "Latitude" , longitude AS "Longitude" FROM `active-fire-alerts`'
-        });
-        console.log("hello");
-        channel.on('rtm/subscription/data', function(pdu) {
-            pdu.body.messages.forEach(function(msg) {
-                console.log("test", msg);
-                var marker = new google.maps.Marker({
-                    position: {
-                        lat: msg.Latitude,
-                        lng: msg.Longitude
-                    },
-                    map: map,
-                    title:'Active Fire in this location!',
-                });
-                var infowindow = new google.maps.InfoWindow({
-                    content:'Active Fire in this Location!'
-                });
-                marker.addListener('click', function() {
-					infowindow.close();
-                    infowindow.open(map, marker);
-                });
-            });
-        });
-        rtm2.start();
-    </script>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Catastrosee</a> <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">Menu <i class="fa fa-bars"></i></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#software">Software</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- Header -->
+	<header class="masthead">
+		<div class="container">
+			<img alt="" class="img-fluid" src="img/without.png">
+			<div class="intro-text">
+				<span class="name">Catastrosee</span>
+				<hr class="star-light">
+				<span class="skills">Track disasters and emergencies across the span of the United States, including Earthquakes, Fires, and Tsunamis.</span>
+			</div>
+		</div>
+	</header><!-- Portfolio Grid Section -->
+	<section id="portfolio">
+		<div class="container">
+			<h2 class="text-center">Information</h2>
+			<hr class="star-primary">
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+					<div class="caption">
+						<div class="caption-content">
+							<i class="fa fa-search-plus fa-3x"></i>
+						</div>
+					</div><img alt="" class="img-fluid" src="img/portfolio/cabin.png"></a>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+					<div class="caption">
+						<div class="caption-content">
+							<i class="fa fa-search-plus fa-3x"></i>
+						</div>
+					</div><img alt="" class="img-fluid" src="img/portfolio/safe.png"></a>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+					<div class="caption">
+						<div class="caption-content">
+							<i class="fa fa-search-plus fa-3x"></i>
+						</div>
+					</div><img alt="" class="img-fluid" src="img/portfolio/code.png"></a>
+				</div>
+			</div>
+		</div>
+	</section><!-- About Section -->
+	<section class="success" id="about">
+		<div class="container">
+			<h2 class="text-center">About</h2>
+			<hr class="star-light">
+			<div class="row">
+				<div class="col-lg-4 ml-auto">
+					<p>Catastrosee shows nearby disasters or emergency sites, and allows you to find relief centers during these times. In addition, you can donate to those who have already sufferred tragedy from disaster.</p>
+				</div>
+				<div class="col-lg-4 mr-auto">
+					<p>Satori is a open data service that provides live data instantaneously, with almost zero latency.</p>
+				</div>
+			</div>
+		</div>
+	</section><!-- Software Section -->
+	<section class="success" id="software">
+		<div class="container">
+			<h2 class="text-center">Software</h2>
+			<hr class="star-light">
+		</div>
+		<div id="map"></div>
 		<script>
-        var rtm3 = new RTM("wss://open-data.api.satori.com", "Eb486E2e4BCc91FF54D4A5fAfd45Ba8D");
-        var channel = rtm3.subscribe('openaq', RTM.SubscriptionMode.SIMPLE, {
-            filter: 'SELECT latitude AS "Latitude" , longitude AS "Longitude" , measurements.pm10.value AS "VALUE" , measurements.pm10.unit AS "UNIT" , measurements.pm10.lastUpdated AS "UPDATE" FROM `openaq`'
-        });
-        console.log("hello");
-        channel.on('rtm/subscription/data', function(pdu) {
-            pdu.body.messages.forEach(function(msg) {
-                console.log("test", msg);
-				var purp = 'http://maps.google.com/mapfiles/ms/micons/purple-dot.png';
-                var marker = new google.maps.Marker({
-                    position: {
-                        lat: msg.Latitude,
-                        lng: msg.Longitude
-                    },
-                    map: map,
-                    title:'Air Quality is quite bad here!',
-					icon: purp
-                });
-                var infowindow = new google.maps.InfoWindow({
-                    content: VALUE + ' ' + UNIT + ' as of ' + UPDATE
-                });
-                marker.addListener('click', function() {
-					infowindow.close();
-                    infowindow.open(map, marker);
-                });
-            });
-        });
-        rtm3.start();
-    </script>
-	
-    <!-- Bootstrap core JavaScript -->
+		  var map;
 
-    <script src="vendor/jquery/jquery.min.js">
-    </script>
-    <script src="vendor/popper/popper.min.js">
-    </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js">
-    </script>
-    <!-- Plugin JavaScript -->
+		  function initMap() {
+			  map = new google.maps.Map(document.getElementById('map'), {
+				  center: {
+					  lat: 51.4778,
+					  lng: 0.0015
+				  },
+				  zoom: 8
+			  });
+			  var pink = 'http://maps.google.com/mapfiles/ms/micons/pink-dot.png';
+			  var marker = new google.maps.Marker({
+				position : new google.maps.LatLng(37.2795627,-122.02983089999998),
+				map : map,
+				icon : pink,
+				title : 'San Jose Relief Center'
+			  });
+			  var infowindow = new google.maps.InfoWindow({
+	            content:'San Jose Relief Center'
+	            });
+	            marker.addListener('click', function() {
+			if(latestInfoBox)
+			{
+				latestInfoBox.close();
+	   	    }
+				latestInfoBox=infowindow;
+	                   
+				infowindow.open(map, marker);
+	        });
+			  var marker2 = new google.maps.Marker({
+				position : new google.maps.LatLng(34.052235, -118.243683),
+				map : map,
+				icon : pink,
+				title : 'Los Angeles Relief Center'
+			  });
+			  infoWindow2 = new google.maps.InfoWindow;
+			  
+			  var infowindow2 = new google.maps.InfoWindow({
+	            content:'Los Angeles Relief Center'
+	            });
+	            marker2.addListener('click', function() {
+			if(latestInfoBox)
+			{
+				latestInfoBox.close();
+	   	    }
+				latestInfoBox=infowindow2;
+	                   
+				infowindow2.open(map, marker2);
+	        });
+			var marker3 = new google.maps.Marker({
+				position : new google.maps.LatLng(37.7730704,-122.4215031),
+				map : map,
+				title : 'Red Cross Bay Area Chapter'
+			  });
+			  var infowindow3 = new google.maps.InfoWindow({
+	            content:'Red Cross Bay Area Chapter'
+	            });
+	            marker3.addListener('click', function() {
+			if(latestInfoBox)
+			{
+				latestInfoBox.close();
+	   	    }
+				latestInfoBox=infowindow3;
+	                   
+				infowindow3.open(map, marker3);
+	        });
+			  // Try HTML5 geolocation.
+			  if (navigator.geolocation) {
+				  navigator.geolocation.getCurrentPosition(function(position) {
+					  var pos = {
+						  lat: position.coords.latitude,
+						  lng: position.coords.longitude
+					  };
 
-    <script src="vendor/jquery-easing/jquery.easing.min.js">
-    </script>
-    <!-- Contact Form JavaScript -->
-
-    <script src="js/jqBootstrapValidation.js">
-    </script>
-    <script src="js/contact_me.js">
-    </script>
-    <!-- Custom scripts for this template -->
-
-    <script src="js/freelancer.min.js">
-    </script>
-    <script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.0/sdk.min.js">
-    </script>
-    <script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.0/sdk.js">
-    </script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsb-lf2ZSjdWB7WlvDfbt7aZng_nsLgv8&libraries=places&callback=initMap" async defer></script>
-
+					  map.setCenter(pos);
+				  }, function() {
+					  handleLocationError(true, infoWindow, map.getCenter());
+				  });
+			  } else {
+				  // Browser doesn't support Geolocation
+				  handleLocationError(false, infoWindow, map.getCenter());
+			  }
+		  }
+		  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+			  infoWindow.setPosition(pos);
+			  console.log(pos);
+			  infoWindow.setContent(browserHasGeolocation ?
+				  'Error: The Geolocation service failed.' :
+				  'Error: Your browser doesn\'t support geolocation.');
+			  infoWindow.open(map);
+		  }
+	</script>
+	</section><!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-4">
+						<h3>Location</h3>
+						<p>Santa Clara<br>
+						Silicon Valley, CA</p>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>Around the Web</h3>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-google-plus"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-twitter"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-dribbble"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>About CatastroSee</h3>
+						<p>A simple disaster monitor that allows you to find and take shelter at relief centers during times of disaster.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; CatastroSee 2017
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top d-lg-none">
+		<a class="btn btn-primary js-scroll-trigger" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+	</div><!-- Portfolio Modals -->
+	<div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal1" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<h2>The Red Cross</h2>
+								<hr class="star-primary">
+								<img alt="" class="img-fluid img-centered" src="img/portfolio/cabin.png">
+								<p>A major part of our project is donation to those who have already sufferred tragedies from disasters. 100% of the funds that are donated through the website go to helping those who need monetary assisstance due to property or familial loss from a disaster.</p>
+								<ul class="list-inline item-details">
+									<li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong></li>
+									<li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong></li>
+									<li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong></li>
+								</ul><button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal2" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<h2>Safety from Disasters</h2>
+								<hr class="star-primary">
+								<img alt="" class="img-fluid img-centered" src="img/portfolio/safe.png">
+								<p>Our system will include a smart detection system, which basically means that when a disaster is approaching you rapidly, it will urge you to evacuate your house, and begin directions to the closest Relief Center, which are marked with pink markers.</p>
+								<ul class="list-inline item-details">
+									<li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong></li>
+									<li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong></li>
+									<li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong></li>
+								</ul><button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal3" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<h2>Coded by individuals and made for individuals</h2>
+								<hr class="star-primary">
+								<img alt="" class="img-fluid img-centered" src="img/portfolio/code.png">
+								<p>Although Emergency Systems are built such that they can project to a large number of people, there can still be some lag, which could result in unncessary fatalities. Our program is coded such that one would be able to recieve data instantaneously, without any lag, due to the source being the low latency, high data platform. SATORI.</p>
+								<ul class="list-inline item-details">
+									<li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong></li>
+									<li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong></li>
+									<li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong></li>
+								</ul><button class="btn btn-success" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	       var rtm = new RTM("wss://open-data.api.satori.com", "8dd521d312CF33EB9fA9ddC94e4616A5");
+	       var channel = rtm.subscribe('USGS-Earthquakes', RTM.SubscriptionMode.SIMPLE, {
+	           history: { count: 99 }, filter: 'SELECT geometry.coordinates[1] AS "Latitude" , geometry.coordinates[0] AS "Longitude" , properties.title AS "Details"  FROM `USGS-Earthquakes`'
+	       });
+	       console.log("hello");
+	       channel.on('rtm/subscription/data', function(pdu) {
+	           pdu.body.messages.forEach(function(msg) {
+	               console.log("test", msg);
+	               var yellow='http://maps.google.com/mapfiles/ms/micons/yellow-dot.png';
+	               var marker = new google.maps.Marker({
+	                   position: {
+	                       lat: msg.Latitude,
+	                       lng: msg.Longitude
+	                   },
+	                   map: map,
+	                   title: msg.Details,
+	                   icon:yellow
+	               });
+	               var infowindow = new google.maps.InfoWindow({
+	                   content:msg.Details
+	               });
+	               marker.addListener('click', function() {
+					   if(latestInfoBox)
+					   {
+					   latestInfoBox.close();
+					   }
+					   latestInfoBox=infowindow;
+	                   
+					   infowindow.open(map, marker);
+	               });
+	           });
+	       });
+	       rtm.start();
+	</script> 
+	<script>
+	       var rtm2 = new RTM("wss://open-data.api.satori.com", "8dd521d312CF33EB9fA9ddC94e4616A5");
+	       var channel = rtm2.subscribe('active-fire-alerts', RTM.SubscriptionMode.SIMPLE, {
+	           history: { count: 10}, filter: 'SELECT latitude AS "Latitude" , longitude AS "Longitude" FROM `active-fire-alerts`'
+	       });
+	       console.log("hello");
+	       channel.on('rtm/subscription/data', function(pdu) {
+	           pdu.body.messages.forEach(function(msg) {
+	               console.log("test", msg);
+				   var red='http://maps.google.com/mapfiles/ms/micons/red-dot.png';
+	               var marker = new google.maps.Marker({
+	                   position: {
+	                       lat: msg.Latitude,
+	                       lng: msg.Longitude
+	                   },
+	                   map: map,
+	                   title:'Active Fire in this location!',
+					   icon: red
+	               });
+	               var infowindow = new google.maps.InfoWindow({
+	                   content:'Active Fire in this Location!'
+	               });
+	               marker.addListener('click', function() {
+	                    if(latestInfoBox)
+					   {
+					   latestInfoBox.close();
+					   }
+					   latestInfoBox=infowindow;
+	                   
+					   infowindow.open(map, marker);
+	               });
+	           });
+	       });
+	       rtm2.start();
+	</script> 
+	<script>
+	       var rtm3 = new RTM("wss://open-data.api.satori.com", "8dd521d312CF33EB9fA9ddC94e4616A5");
+	       var channel = rtm3.subscribe('openaq', RTM.SubscriptionMode.SIMPLE, {
+	           history: { count: 99 }, filter: 'SELECT latitude AS "Latitude" , longitude AS "Longitude" , measurements.pm10.value AS "VALUE" , measurements.pm10.unit AS "UNIT" , measurements.pm10.lastUpdated AS "UPDATE" FROM `openaq`'
+	       });
+	       console.log("hello");
+	       channel.on('rtm/subscription/data', function(pdu) {
+	           pdu.body.messages.forEach(function(msg) {
+	               console.log("test", msg);
+	               var purp = 'http://maps.google.com/mapfiles/ms/micons/purple-dot.png';
+	               var marker = new google.maps.Marker({
+	                   position: {
+	                       lat: msg.Latitude,
+	                       lng: msg.Longitude
+	                   },
+	                   map: map,
+	                   title:'Air Quality is quite bad here!',
+	                   icon: purp
+	               });
+	               var infowindow = new google.maps.InfoWindow({
+	                   content: msg.VALUE + ' ' + msg.UNIT + ' as of ' + msg.UPDATE
+	               });
+	               marker.addListener('click', function() {
+	                   if(latestInfoBox)
+					   {
+					   latestInfoBox.close();
+					   }
+					   latestInfoBox=infowindow;
+	                   
+					   infowindow.open(map, marker);
+	               });
+	           });
+	       });
+	       rtm3.start();
+	</script> 
+	<script>
+	       var rtm4 = new RTM("wss://open-data.api.satori.com", "8dd521d312CF33EB9fA9ddC94e4616A5");
+	       var channel = rtm4.subscribe('full-weather', RTM.SubscriptionMode.SIMPLE, {
+	           history: { count: 99 }, filter: SELECT location.coords.lon AS "Longitude", location.coords.lat AS "Latitude" FROM `full-weather` WHERE type = "lightning"
+	       });
+	       console.log("hello");
+	       channel.on('rtm/subscription/data', function(pdu) {
+	           pdu.body.messages.forEach(function(msg) {
+	               console.log("test", msg);
+	               var green = 'http://maps.google.com/mapfiles/ms/micons/green-dot.png';
+	               var marker = new google.maps.Marker({
+	                   position: {
+	                       lat: msg.Latitude,
+	                       lng: msg.Longitude
+	                   },
+	                   map: map,
+	                   title:'Lightning storm here! Stay Alert!',
+	                   icon: green
+	               });
+	               var infowindow = new google.maps.InfoWindow({
+	                   content: 'Lightning Storm! Be Careful!'
+	               });
+	               marker.addListener('click', function() {
+	                   if(latestInfoBox)
+					   {
+					   latestInfoBox.close();
+					   }
+					   latestInfoBox=infowindow;
+	                   
+					   infowindow.open(map, marker);
+	               });
+	           });
+	       });
+	       rtm4.start();
+	</script> 
+	<script src="vendor/jquery/jquery.min.js">
+	</script> 
+	<script src="vendor/popper/popper.min.js">
+	</script> 
+	<script src="vendor/bootstrap/js/bootstrap.min.js">
+	</script> <!-- Plugin JavaScript -->
+	 
+	<script src="vendor/jquery-easing/jquery.easing.min.js">
+	</script> <!-- Contact Form JavaScript -->
+	 
+	<script src="js/jqBootstrapValidation.js">
+	</script> 
+	<script src="js/contact_me.js">
+	</script> <!-- Custom scripts for this template -->
+	 
+	<script src="js/freelancer.min.js">
+	</script> 
+	<script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.0/sdk.min.js">
+	</script> 
+	<script src="https://satori-a.akamaihd.net/satori-rtm-sdk/v1.1.0/sdk.js">
+	</script> 
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsb-lf2ZSjdWB7WlvDfbt7aZng_nsLgv8&libraries=places,geometry&callback=initMap">
+	</script>
 </body>
-
 </html>
